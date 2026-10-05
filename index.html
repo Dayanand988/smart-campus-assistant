@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Campus Assistant | Dr. D.Y. Patil School Of Science &amp; Technology, Pune</title>
+  <meta name="description" content="Smart Campus Virtual Assistant for Dr. D.Y. Patil School Of Science & Technology, Pune.">
+  <link rel="icon" href="assets/icons/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dark status bar (like the reference screenshot) -->
+  <div class="statusbar">
+    <span class="sb-inst">🎓 Dr. D.Y. Patil School Of Science &amp; Technology, Pune</span>
+    <span class="sb-item" id="sbDate"></span>
+    <span class="sb-item" id="sbLibrary"></span>
+    <span class="sb-item sb-online">🟢 AI Assistant Online</span>
+  </div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/icons/logo.svg" alt="" width="42" height="42">
+        <div><strong>Smart Campus</strong><small>Student Portal &amp; AI Assistant</small></div>
+      </div>
+      <nav id="nav"></nav>
+    </aside>
+    <div class="backdrop" id="backdrop"></div>
+
+    <div class="content">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <h1 id="pageTitle">Dashboard</h1>
+        <button class="btn primary" data-go="assistant">✨ Ask Smart Campus AI</button>
+      </header>
+      <main id="view"></main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
